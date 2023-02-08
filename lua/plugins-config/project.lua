@@ -9,7 +9,7 @@ vim.g.nvim_tree_respect_buf_cwd = 1
 
 project.setup({
     detection_methods = {"pattern"},
-    patherns = { ".git", "_darcs", ".hg", ".bzr", ".svn", <LeftMouse>"Makefile", "package.json", ".sln" },
+    patherns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", ".sln" },
 })
 
 local status, telescope = pcall(require, "telescope")

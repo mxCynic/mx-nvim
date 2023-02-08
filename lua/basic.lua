@@ -1,6 +1,6 @@
 -- utf8
 vim.g.encoding = "UTF-8"
-vim.o.fileencoding = 'utf-8'
+vim.o.fileencoding = "utf-8"
 -- jkhl 移动时光标周围保留8行
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
@@ -16,7 +16,7 @@ vim.wo.signcolumn = "yes"
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true 
+vim.opt.expandtab = true
 -- >> << 时移动长度
 vim.o.shiftwidth = 4
 vim.bo.shiftwidth = 4
@@ -39,7 +39,7 @@ vim.bo.autoread = true
 -- 禁止折行
 vim.wo.wrap = false
 -- 光标在行首尾时<Left><Right>可以跳到下一行
-vim.o.whichwrap = '<,>,[,]'
+vim.o.whichwrap = "<,>,[,]"
 -- 允许隐藏被修改过的buffer
 vim.o.hidden = true
 -- 禁止创建备份文件
@@ -48,8 +48,8 @@ vim.o.writebackup = false
 vim.o.swapfile = false
 -- smaller updatetime
 vim.o.updatetime = 300
--- 设置 timeoutlen 为等待键盘快捷键连击时间500毫秒，可根据需要设置
-vim.o.timeoutlen = 500
+-- 设置 timeoutlen 为等待键盘快捷键连击时间300毫秒，可根据需要设置
+vim.o.timeoutlen = 150
 -- split window 从下边和右边出现
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -65,10 +65,12 @@ vim.o.listchars = "space:·"
 -- 补全增强
 vim.o.wildmenu = true
 -- Dont' pass messages to |ins-completin menu|
-vim.o.shortmess = vim.o.shortmess .. 'c'
+vim.o.shortmess = vim.o.shortmess .. "c"
 -- 补全最多显示10行
 vim.o.pumheight = 10
 -- 永远显示 tabline
 vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
+
+vim.o.loaded_perl_provider = 0

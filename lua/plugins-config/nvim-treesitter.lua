@@ -14,10 +14,6 @@ treesitter.setup({
         enable = true,
         additional_vim_regex_highlighting = false,
     },
-
-
-
-
     -- 启用增量选择模块
     incremental_selection = {
         enable = true,

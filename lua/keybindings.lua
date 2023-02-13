@@ -162,4 +162,9 @@ pluginKeys.comment = {
         bock = "gb",
     },
 }
+
+--sniprun快捷键设置
+map("v", "<leader>ru", ":SnipRun<CR>", opt)
+
+
 return pluginKeys

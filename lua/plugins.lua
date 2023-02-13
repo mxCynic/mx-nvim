@@ -76,6 +76,10 @@ packer.startup({
                 require("Comment").setup()
             end,
         })
+        --sniprun编译运行插件
+        use { 'michaelb/sniprun', run = 'bash ./install.sh'}
+        --fugitive(git plugin)
+        use{ 'tpope/vim-fugitive'}
     end,
     --以浮动窗口打开安装列表：
     config = {

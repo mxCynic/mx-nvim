@@ -9,6 +9,7 @@ require("colorscheme")
 --编译运行脚本
 require("run")
 
+
 --插件require
 require("plugins-config.nvim-tree") --nvim-tree侧边文件栏
 require("plugins-config.bufferLine") --bufferline 顶部标签页

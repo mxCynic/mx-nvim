@@ -6,6 +6,8 @@ require("keybindings")
 require("plugins")
 -- 主题设置
 require("colorscheme")
+--编译运行脚本
+require("run")
 
 --插件require
 require("plugins-config.nvim-tree") --nvim-tree侧边文件栏

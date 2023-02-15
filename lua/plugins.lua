@@ -44,7 +44,8 @@ packer.startup({
         --mason插件
         use({ "williamboman/mason.nvim" })
         use({ "williamboman/mason-lspconfig.nvim" })
-
+        -- Lspconfig
+        use({ "neovim/nvim-lspconfig" })
         -- 补全引擎
         use("hrsh7th/nvim-cmp")
         -- snippet 引擎
@@ -80,6 +81,23 @@ packer.startup({
         use { 'michaelb/sniprun', run = 'bash ./install.sh'}
         --fugitive(git plugin)
         use{ 'tpope/vim-fugitive'}
+        --noice
+        use({
+            "folke/noice.nvim",
+            config = function()
+                require("noice").setup({
+                    -- add any options here
+                })
+            end,
+            requires = {
+                -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+                "MunifTanjim/nui.nvim",
+                -- OPTIONAL:
+                --   `nvim-notify` is only needed, if you want to use the notification view.
+                --   If not available, we use `mini` as the fallback
+                "rcarriga/nvim-notify",
+            }
+        })
     end,
     --以浮动窗口打开安装列表：
     config = {

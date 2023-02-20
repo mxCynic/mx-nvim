@@ -103,6 +103,8 @@ packer.startup({
         use({ "iamcco/markdown-preview.nvim", 
             run = "cd app && npm install",
             setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+
+
             ft = { "markdown" }, })
         -- markdown插入图片插件
         use{ "img-paste-devs/img-paste.vim" }

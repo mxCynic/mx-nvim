@@ -18,7 +18,7 @@ require("plugins-config.noiceNvim") --noice
 require("plugins-config.nvim-tree") --nvim-tree侧边文件栏
 require("plugins-config.nvim-treesitter") --treesitter语法高亮
 require("plugins-config.project") --项目管理插件
-require("plugins-config.sniprun") --sniprun
+require("plugins-config.sniprun") -- sniprun小片段代码编译运行插件
 require("plugins-config.telescope") --telescope 模糊搜索弹窗
 require("plugins-config.transparent") -- transparent 透明插件
 

@@ -19,7 +19,14 @@ map("n", "<S-k>", "<C-w>k", opt)
 map("n", "<S-l>", "<C-w>l", opt)
 -- ctrl + s 保存
 map("n", "<C-s>", ":w<CR>", opt)
---
+-- 新建关闭tab操作
+map("n", "<leader>tc", ":tabclose<CR>", opt)
+map("n", "<leader>to", ":tabonly<CR>", opt)
+map("n", "<leader>tn", ":tabnew<CR>", opt)
+-- 左右tab切换
+map("n", "<A-h>", ":tabNext<CR>", opt)
+map("n", "<A-l>", ":tabnext<CR>", opt)
+
 --
 ---------------------插入模式i-------------------------
 --快速jk映射为esc
@@ -35,6 +42,10 @@ map("v", ">", ">gv", opt)
 -- 上下移动选中文本
 map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
+--
+--
+--------------------命令行模式v------------------------
+--
 --
 -- 插件快捷键
 local pluginKeys = {}
@@ -87,7 +98,7 @@ pluginKeys.telescopeList = {
 }
 
 -- bufferline
--- 左右Tab切换
+-- 左右buffer切换
 map("n", "<A-j>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<A-k>", ":BufferLineCycleNext<CR>", opt)
 -- 关闭
@@ -165,6 +176,14 @@ pluginKeys.comment = {
 
 --sniprun快捷键设置
 map("v", "<leader>ru", ":SnipRun<CR>", opt)
+
+-- markdown插入图片快捷键
+--map("n", "<C-v>", ":call mdip#MarkdownClipboardImage()<CR>", opt)
+vim.cmd[[
+    autocmd FileType markdown nnoremap <buffer> <leader>i :call mdip#MarkdownClipboardImage()<CR>
+]]
+
+
 
 
 return pluginKeys

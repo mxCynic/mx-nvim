@@ -17,7 +17,7 @@ packer.startup({
         })
         --Nvim-web-devicons,该插件为每个图标提供相同的图标和 颜色。
         use("nvim-tree/nvim-web-devicons")
-        -- bufferline 顶部tab栏插件
+        -- bufferline 顶部buffer栏插件
         use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" } })
         -- lualine 底部标签栏插件
         use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
@@ -98,6 +98,17 @@ packer.startup({
                 "rcarriga/nvim-notify",
             }
         })
+
+        -- markdown预览插件
+        use({ "iamcco/markdown-preview.nvim", 
+            run = "cd app && npm install",
+            setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+            ft = { "markdown" }, })
+        -- markdown插入图片插件
+        use{ "img-paste-devs/img-paste.vim" }
+        -- 透明背景插件
+        use{ "xiyaowong/nvim-transparent"}
+
     end,
     --以浮动窗口打开安装列表：
     config = {

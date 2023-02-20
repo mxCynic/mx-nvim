@@ -1,5 +1,5 @@
 
-local status, project = pcall(require, 'project_nvim')
+local status, sniprun = pcall(require, 'sniprun')
 if not status then 
     vim.notify("没有找到 sniprun")
     return
@@ -64,9 +64,9 @@ sniprun.setup({
     live_mode_toggle='off'      --# live mode toggle, see Usage - Running for more info   
 
     --# miscellaneous compatibility/adjustement settings
-    inline_messages = 0,        --# inline_message (0/1) is a one-line way to display messages
+    --inline_messages = 0,        --# inline_message (0/1) is a one-line way to display messages
     --# to workaround sniprun not being able to display anything
 
-    borders = 'single',         --# display borders around floating windows
+    --borders = 'single',         --# display borders around floating windows
     --# possible values are 'none', 'single', 'double', or 'shadow'
 })

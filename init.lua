@@ -15,6 +15,7 @@ require("plugins-config.dashboard") --dashboard vim启动设置
 require("plugins-config.indent-blankline") --tab对齐线
 require("plugins-config.luaLine") --luaLine 底部标签栏
 require("plugins-config.noiceNvim") --noice 
+require("plugins-config.notify") --notify 插件
 require("plugins-config.nvim-tree") --nvim-tree侧边文件栏
 require("plugins-config.nvim-treesitter") --treesitter语法高亮
 require("plugins-config.project") --项目管理插件

@@ -38,20 +38,20 @@ packer.startup({
             config = function()
                 require("nvim-autopairs").setup({})
             end,
-        })
-        --treesitter 语法高亮插件
+        }) 
+        --treesitter 语法高亮插件 
         use({ "nvim-treesitter/nvim-treesitter", run = "TSUpdate" })
         --mason插件
         use({ "williamboman/mason.nvim" })
         use({ "williamboman/mason-lspconfig.nvim" })
-        -- Lspconfig
+        -- Lspconfig 
         use({ "neovim/nvim-lspconfig" })
         -- 补全引擎
         use("hrsh7th/nvim-cmp")
-        -- snippet 引擎
+        -- snippet 引擎 
         use("hrsh7th/vim-vsnip")
-        -- 补全源
-        use("hrsh7th/cmp-vsnip")
+        -- 补全源 
+        use("hrsh7th/cmp-vsnip") 
         use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
         use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
         use("hrsh7th/cmp-path") -- { name = 'path' }

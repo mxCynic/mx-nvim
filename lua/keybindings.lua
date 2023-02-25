@@ -175,7 +175,7 @@ pluginKeys.comment = {
 }
 
 --sniprun快捷键设置
-map("v", "<leader>ru", ":SnipRun<CR>", opt)
+map("v", "<leader>u", ":SnipRun<CR>", opt)
 
 -- markdown插入图片快捷键
 --map("n", "<C-v>", ":call mdip#MarkdownClipboardImage()<CR>", opt)

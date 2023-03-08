@@ -6,6 +6,8 @@ require("keybindings")
 require("plugins")
 -- 主题设置
 require("colorscheme")
+-- 编译运行
+require("run")
 
 
 --插件require
